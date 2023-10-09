@@ -1,4 +1,4 @@
-html{
+html, body, .footer{
     background: #cfc4d1;   
 }
 header{
@@ -33,6 +33,18 @@ div>img{
 .is-half{
     display: flex;
     justify-content: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+#recipeCard{
+    padding: 20px;
+    width: 50%;
+}
+#goBack{
+    padding-bottom: 5%;
 }
 
 /*

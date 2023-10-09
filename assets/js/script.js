@@ -25,6 +25,7 @@ function handleSearch(inputId, redirectUrl, type) {
         errorElement.style.display = "none"; // Hide the error message
     }
     // Store the userInput in local storage's recent searches
+    
     storeRecentSearch(userInput, type);
 
     // Update the displayed recent searches immediately
@@ -34,6 +35,7 @@ function handleSearch(inputId, redirectUrl, type) {
     var url = redirectUrl + "?q=" + userInput;
     location.assign(url);
 }
+
 
 function storeRecentSearch(searchTerm, type) {
     var storageKey = (type === "food") ? "recentFoodSearches" : "recentDrinkSearches";
@@ -53,6 +55,7 @@ function storeRecentSearch(searchTerm, type) {
         recentSearches.pop();
     }
 
+   
     // Update local storage with the modified recent searches
     localStorage.setItem(storageKey, JSON.stringify(recentSearches));
 }

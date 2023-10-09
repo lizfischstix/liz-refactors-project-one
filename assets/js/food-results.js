@@ -22,6 +22,7 @@ fetch(API_FoodURL)
         var errorMessage = document.createElement("p");
         errorMessage.textContent = "Sorry, no recipes found with this ingredient!"; // TODO: bigger font size and red
         results.appendChild(errorMessage);
+        
     })
 
 function showRecipes(data) {
