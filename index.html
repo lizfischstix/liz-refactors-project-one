@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="banner hero"><img src="./assets/Recipe Finder (Billboard (Landscape)).png"
+            alt="bannder reading what's for dinner the recipe finder for busy coding bootcamp students."></div>
+    <header class="content is-medium">
+        Search for an ingredient you'd like to use, and we'll find you recipes that use it.
+    </header>
+
+    <main class="columns mainSearch">
+        <div class="column is-half">
+            <Section class="food">
+                <div class="title is-8">food</div>
+                <form id="foodSearch" action="search">
+                    <input id="userInputFood" type="text" placeholder="Search" name="search">
+                    <span id="foodError" class="error-message"></span>
+                    <button type="submit" class="button is-dark is-small">Search</button>
+                </form>
+                <div class="recentMenu">
+                    <br>
+                    <h3 class="title is-5">recent food searches</h3>
+                    <section class="recentFoodButtons">
+                        <!-- Recent food search buttons will appear here -->
+                    </section>
+                </div>
+            </Section>
+        </div>
+        <div class="column is-half">
+            <section class="drinks">
+                <div class="title is-8">drinks</div>
+                <form id="drinkSearch" action="search">
+                    <input id="userInputDrink" type="text" placeholder="Search" name="search">
+                    <span id="drinkError" class="error-message"></span>
+                    <button type="submit" class="button is-dark is-small">Search</button>
+                </form>
+                <div class="recentMenu">
+                    <br>
+                    <h3 class="title is-5">recent drink searches</h3>
+                <section class="recentDrinkButtons">
+                        <!-- Recent drink search buttons will appear here -->
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
